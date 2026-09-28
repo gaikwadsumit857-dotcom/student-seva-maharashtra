@@ -1,1448 +1,752 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="description"
-    content="Student Seva Maharashtra - Student services, scholarship form filling, university exam form filling, online application assistance, percentage calculator and document checklist."
-  >
+  <title>Student Seva Maharashtra | Student Services & Scholarship Assistance</title>
 
-  <meta
-    name="keywords"
-    content="Student Seva Maharashtra, scholarship form filling, MahaDBT scholarship, university exam form, PAN card assistance, online form filling, student services"
-  >
+  <meta name="description" content="Student Seva Maharashtra provides student services, scholarship assistance, online form filling and educational support.">
 
-  <meta
-    name="author"
-    content="Student Seva Maharashtra"
-  >
+  <meta name="google-site-verification" content="DyYOqWW96qEcUJBZ-jB9Ap7iqGwiWqTNLnkOxtzgKK8">
 
-  <!-- Google Search Console Verification -->
-  <meta
-    name="google-site-verification"
-    content="DyYOqWW96qEcUJBZ-jB9Ap7iqGwiWqTNLnkOxtzgKK8"
-  >
-
-  <meta
-    name="theme-color"
-    content="#2563eb"
-  >
-
-  <meta
-    property="og:title"
-    content="Student Seva Maharashtra"
-  >
-
-  <meta
-    property="og:description"
-    content="Student services, scholarship form filling and online application assistance."
-  >
-
-  <meta
-    property="og:type"
-    content="website"
-  >
-
-  <title>
-    Student Seva Maharashtra | Digital Student Services
-  </title>
-
-  <link
-    rel="stylesheet"
-    href="style.css"
-  >
-
+  <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav-container">
 
-<!-- =====================================================
-     HEADER
-===================================================== -->
-
-<header class="site-header">
-
-  <div class="container header-inner">
-
-    <a
-      href="#home"
-      class="brand"
-    >
-
-      <div class="brand-logo">
-        🎓
+      <div class="logo">
+        <h2>Student Seva Maharashtra</h2>
+        <span>Student Services Made Easy</span>
       </div>
 
-      <div class="brand-text">
+      <nav id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="help-center.html">Help Center</a>
+        <a href="#scholarships">Scholarships</a>
+        <a href="#resources">Resources</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-        <strong>
-          Student Seva
-        </strong>
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
-        <span>
-          Maharashtra
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <div class="container hero-content">
+
+      <div class="hero-text">
+
+        <span class="hero-badge">
+          🎓 Student Support Platform
         </span>
 
-      </div>
-
-    </a>
-
-
-    <button
-      class="menu-toggle"
-      onclick="toggleMenu()"
-      aria-label="Open Menu"
-    >
-      ☰
-    </button>
-
-
-    <nav class="nav-links">
-
-      <a href="#home">
-        Home
-      </a>
-
-      <a href="#services">
-        Services
-      </a>
-
-      <a href="#scholarship">
-        Scholarship
-      </a>
-
-      <a href="#resources">
-        Resources
-      </a>
-
-      <a href="#notices">
-        Notices
-      </a>
-
-      <a href="#contact">
-        Contact
-      </a>
-
-    </nav>
-
-  </div>
-
-</header>
-
-
-
-<!-- =====================================================
-     HERO
-===================================================== -->
-
-<section
-  class="hero"
-  id="home"
->
-
-  <div class="container hero-grid">
-
-
-    <div class="hero-content">
-
-      <div class="hero-badge">
-        🇮🇳 Digital Student Services
-      </div>
-
-
-      <h1>
-        Everything Students Need,
-        <span>In One Place.</span>
-      </h1>
-
-
-      <p>
-        Student Seva Maharashtra helps students with
-        scholarships, form filling, applications,
-        documents and useful academic services —
-        quickly and easily.
-      </p>
-
-
-      <div class="hero-buttons">
-
-        <a
-          href="#services"
-          class="primary-btn"
-        >
-          Explore Services
-        </a>
-
-        <a
-          href="#scholarship"
-          class="outline-btn"
-        >
-          🎓 Find Scholarship
-        </a>
-
-      </div>
-
-
-      <div class="hero-trust">
-
-        <span>
-          ✓ Easy to Use
-        </span>
-
-        <span>
-          ✓ Student Friendly
-        </span>
-
-        <span>
-          ✓ Mobile Ready
-        </span>
-
-      </div>
-
-    </div>
-
-
-
-    <div class="hero-card">
-
-      <div class="hero-card-glow"></div>
-
-      <div class="student-illustration">
-        🎓
-      </div>
-
-      <h3>
-        Your Student Help Desk
-      </h3>
-
-      <p>
-        Useful digital tools and information
-        designed for Maharashtra students.
-      </p>
-
-
-      <div class="hero-mini-grid">
-
-        <div>
-          <strong>8+</strong>
-          <span>Services</span>
-        </div>
-
-        <div>
-          <strong>24/7</strong>
-          <span>Access</span>
-        </div>
-
-        <div>
-          <strong>100%</strong>
-          <span>Digital</span>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     STATS
-===================================================== -->
-
-<section class="stats-section">
-
-  <div class="container stats-grid">
-
-    <div class="stat-card">
-
-      <div class="stat-icon">
-        🧮
-      </div>
-
-      <div>
-        <strong>4+</strong>
-        <span>Student Tools</span>
-      </div>
-
-    </div>
-
-
-    <div class="stat-card">
-
-      <div class="stat-icon">
-        🎓
-      </div>
-
-      <div>
-        <strong>8+</strong>
-        <span>Scholarship Categories</span>
-      </div>
-
-    </div>
-
-
-    <div class="stat-card">
-
-      <div class="stat-icon">
-        📄
-      </div>
-
-      <div>
-        <strong>50+</strong>
-        <span>Document References</span>
-      </div>
-
-    </div>
-
-
-    <div class="stat-card">
-
-      <div class="stat-icon">
-        📱
-      </div>
-
-      <div>
-        <strong>Mobile</strong>
-        <span>Friendly Website</span>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     SERVICES
-===================================================== -->
-
-<section
-  class="section services-section"
-  id="services"
->
-
-  <div class="container">
-
-
-    <div class="section-heading">
-
-      <span>
-        OUR SERVICES
-      </span>
-
-      <h2>
-        Student Services
-      </h2>
-
-      <p>
-        Useful tools and affordable form-filling
-        assistance for students.
-      </p>
-
-    </div>
-
-
-    <div class="service-search">
-
-      <span>
-        🔍
-      </span>
-
-      <input
-        type="search"
-        id="serviceSearch"
-        placeholder="Search student service..."
-        oninput="searchServices()"
-      >
-
-    </div>
-
-
-
-    <div class="services-grid">
-
-
-      <!-- Percentage Calculator -->
-
-      <div class="service-card">
-
-        <div class="service-icon blue">
-          🧮
-        </div>
-
-        <span class="service-tag">
-          TOOL
-        </span>
-
-        <h3>
-          Percentage Calculator
-        </h3>
+        <h1>
+          Student Seva Maharashtra
+        </h1>
 
         <p>
-          Calculate your marks percentage quickly
-          and accurately.
+          Simple, reliable and student-friendly assistance for scholarships,
+          online forms, educational services and important student needs.
         </p>
 
-        <button
-          class="service-link"
-          onclick="showTool('percentage')"
-        >
-          Calculate Now →
-        </button>
-
-      </div>
-
-
-
-      <!-- Scholarship Finder -->
-
-      <div class="service-card">
-
-        <div class="service-icon purple">
-          🎓
-        </div>
-
-        <span class="service-tag">
-          SCHOLARSHIP
-        </span>
-
-        <h3>
-          Scholarship Finder
-        </h3>
-
-        <p>
-          Find scholarship opportunities based on
-          your student details.
-        </p>
-
-        <button
-          class="service-link"
-          onclick="openScholarshipFinder()"
-        >
-          Find Scholarship →
-        </button>
-
-      </div>
-
-
-
-      <!-- Application Generator -->
-
-      <div class="service-card">
-
-        <div class="service-icon green">
-          📝
-        </div>
-
-        <span class="service-tag">
-          GENERATOR
-        </span>
-
-        <h3>
-          Application Generator
-        </h3>
-
-        <p>
-          Create professional student applications
-          in a few simple steps.
-        </p>
-
-        <button
-          class="service-link"
-          onclick="showTool('application')"
-        >
-          Create Application →
-        </button>
-
-      </div>
-
-
-
-      <!-- Document Checklist -->
-
-      <div class="service-card">
-
-        <div class="service-icon orange">
-          📄
-        </div>
-
-        <span class="service-tag">
-          CHECKLIST
-        </span>
-
-        <h3>
-          Document Checklist
-        </h3>
-
-        <p>
-          Check commonly required documents for
-          different student services.
-        </p>
-
-        <button
-          class="service-link"
-          onclick="showTool('documents')"
-        >
-          View Checklist →
-        </button>
-
-      </div>
-
-
-
-      <!-- Scholarship Form Filling -->
-
-      <div class="service-card">
-
-        <div class="service-icon purple">
-          🎓
-        </div>
-
-        <span class="service-tag">
-          FORM FILLING
-        </span>
-
-        <h3>
-          Scholarship Form Filling
-        </h3>
-
-        <p>
-          Maharashtra students साठी Scholarship Form
-          भरून देण्याची सुविधा.
-        </p>
-
-        <div class="service-price">
-          💰 Service Charge: ₹100
-        </div>
-
-        <button
-          class="service-link"
-          onclick="openScholarshipWhatsApp(event)"
-        >
-          Apply Now →
-        </button>
-
-      </div>
-
-
-
-      <!-- University Exam Form Filling -->
-
-      <div class="service-card">
-
-        <div class="service-icon blue">
-          📝
-        </div>
-
-        <span class="service-tag">
-          FORM FILLING
-        </span>
-
-        <h3>
-          University Exam Form Filling
-        </h3>
-
-        <p>
-          University exam form भरून देण्याची
-          सुविधा विद्यार्थ्यांसाठी.
-        </p>
-
-        <div class="service-price">
-          💰 Service Charge: ₹100
-        </div>
-
-        <button
-          class="service-link"
-          onclick="openServiceWhatsApp('University Exam Form Filling')"
-        >
-          Apply Now →
-        </button>
-
-      </div>
-
-
-
-      <!-- PAN Card Application Assistance -->
-
-      <div class="service-card">
-
-        <div class="service-icon orange">
-          🪪
-        </div>
-
-        <span class="service-tag">
-          ONLINE SERVICE
-        </span>
-
-        <h3>
-          PAN Card Application Assistance
-        </h3>
-
-        <p>
-          PAN Card application भरताना online
-          assistance उपलब्ध.
-        </p>
-
-        <div class="service-price">
-          💰 Service Charge: ₹100
-        </div>
-
-        <button
-          class="service-link"
-          onclick="openServiceWhatsApp('PAN Card Application Assistance')"
-        >
-          Apply Now →
-        </button>
-
-      </div>
-
-
-
-      <!-- Online Application Form Filling -->
-
-      <div class="service-card">
-
-        <div class="service-icon green">
-          📄
-        </div>
-
-        <span class="service-tag">
-          FORM FILLING
-        </span>
-
-        <h3>
-          Online Application Form Filling
-        </h3>
-
-        <p>
-          विविध online application forms भरून
-          देण्याची सुविधा.
-        </p>
-
-        <div class="service-price">
-          💰 Service Charge: ₹100
-        </div>
-
-        <button
-          class="service-link"
-          onclick="openServiceWhatsApp('Online Application Form Filling')"
-        >
-          Apply Now →
-        </button>
-
-      </div>
-
-
-    </div>
-
-
-
-    <div
-      id="toolArea"
-      class="tool-area"
-    ></div>
-
-
-  </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     SCHOLARSHIP
-===================================================== -->
-
-<section
-  class="section scholarship-section"
-  id="scholarship"
->
-
-  <div class="container">
-
-
-    <div class="section-heading">
-
-      <span>
-        SCHOLARSHIP SUPPORT
-      </span>
-
-      <h2>
-        Find Scholarship Opportunities
-      </h2>
-
-      <p>
-        Enter your basic details to discover potentially
-        relevant scholarship schemes.
-      </p>
-
-    </div>
-
-
-
-    <div class="scholarship-box">
-
-
-      <div class="scholarship-intro">
-
-        <div class="big-icon">
-          🎓
-        </div>
-
-        <h3>
-          Scholarship Finder
-        </h3>
-
-        <p>
-          Select your category and student details.
-        </p>
-
-      </div>
-
-
-
-      <div class="scholarship-form">
-
-
-        <div class="form-group">
-
-          <label>
-            Category
-          </label>
-
-          <select id="sfCategory">
-
-            <option value="">
-              Select Category
-            </option>
-
-            <option value="SC">
-              SC
-            </option>
-
-            <option value="ST">
-              ST
-            </option>
-
-            <option value="OBC">
-              OBC
-            </option>
-
-            <option value="VJNT">
-              VJNT
-            </option>
-
-            <option value="SBC">
-              SBC
-            </option>
-
-            <option value="OPEN">
-              OPEN
-            </option>
-
-            <option value="EWS">
-              EWS
-            </option>
-
-            <option value="MINORITY">
-              Minority
-            </option>
-
-          </select>
+        <div class="hero-buttons">
+
+          <a href="#services" class="btn primary-btn">
+            Explore Services
+          </a>
+
+          <a href="help-center.html" class="btn secondary-btn">
+            🎓 Student Help Center
+          </a>
 
         </div>
 
+        <div class="hero-mini-grid">
+
+          <div>
+            <strong>8+</strong>
+            <span>Services</span>
+          </div>
+
+          <div>
+            <strong>₹100</strong>
+            <span>Service Charge</span>
+          </div>
+
+          <div>
+            <strong>24/7</strong>
+            <span>Online Access</span>
+          </div>
 
-
-        <div class="form-group">
-
-          <label>
-            Education Level
-          </label>
-
-          <select id="sfEducation">
-
-            <option value="">
-              Select Education
-            </option>
-
-            <option value="school">
-              School
-            </option>
-
-            <option value="diploma">
-              Diploma
-            </option>
-
-            <option value="ug">
-              Undergraduate
-            </option>
-
-            <option value="pg">
-              Postgraduate
-            </option>
-
-            <option value="professional">
-              Professional Course
-            </option>
-
-          </select>
-
-        </div>
-
-
-
-        <div class="form-group">
-
-          <label>
-            Annual Family Income
-          </label>
-
-          <input
-            type="number"
-            id="sfIncome"
-            placeholder="Example: 250000"
-            min="0"
-          >
-
-        </div>
-
-
-
-        <div class="form-group">
-
-          <label>
-            Maharashtra Domicile
-          </label>
-
-          <select id="sfDomicile">
-
-            <option value="">
-              Select
-            </option>
-
-            <option value="yes">
-              Yes
-            </option>
-
-            <option value="no">
-              No
-            </option>
-
-          </select>
-
-        </div>
-
-
-
-        <div class="form-group">
-
-          <label>
-            Disability
-          </label>
-
-          <select id="sfDisability">
-
-            <option value="">
-              Select
-            </option>
-
-            <option value="yes">
-              Yes
-            </option>
-
-            <option value="no">
-              No
-            </option>
-
-          </select>
-
-        </div>
-
-
-
-        <div class="form-group">
-
-          <label>
-            Hostel
-          </label>
-
-          <select id="sfHostel">
-
-            <option value="">
-              Select
-            </option>
-
-            <option value="yes">
-              Yes
-            </option>
-
-            <option value="no">
-              No
-            </option>
-
-          </select>
-
-        </div>
-
-
-      </div>
-
-
-
-      <button
-        class="primary-btn scholarship-btn"
-        onclick="findScholarships()"
-      >
-        🔎 Find Scholarships
-      </button>
-
-
-      <div
-        id="scholarshipResults"
-        class="scholarship-results"
-      ></div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     NOTICE BOARD
-===================================================== -->
-
-<section
-  class="section notices-section"
-  id="notices"
->
-
-  <div class="container">
-
-
-    <div class="section-heading">
-
-      <span>
-        STUDENT UPDATES
-      </span>
-
-      <h2>
-        Notice Board
-      </h2>
-
-      <p>
-        Important reminders for students.
-      </p>
-
-    </div>
-
-
-
-    <div class="notice-grid">
-
-
-      <div class="notice-card">
-
-        <div class="notice-icon">
-          🎓
-        </div>
-
-        <div>
-
-          <span class="notice-label">
-            Scholarship
-          </span>
-
-          <h3>
-            Check scholarship deadlines
-          </h3>
-
-          <p>
-            Always verify the latest application
-            dates on the official scholarship portal.
-          </p>
-
-        </div>
-
-      </div>
-
-
-
-      <div class="notice-card">
-
-        <div class="notice-icon">
-          📝
-        </div>
-
-        <div>
-
-          <span class="notice-label">
-            University
-          </span>
-
-          <h3>
-            Verify exam form dates
-          </h3>
-
-          <p>
-            Students should check their university
-            portal for current examination schedules.
-          </p>
-
-        </div>
-
-      </div>
-
-
-
-      <div class="notice-card">
-
-        <div class="notice-icon">
-          📄
-        </div>
-
-        <div>
-
-          <span class="notice-label">
-            Documents
-          </span>
-
-          <h3>
-            Keep your documents ready
-          </h3>
-
-          <p>
-            Maintain digital and physical copies of
-            important academic documents.
-          </p>
-
-        </div>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     RESOURCES
-===================================================== -->
-
-<section
-  class="section resources-section"
-  id="resources"
->
-
-  <div class="container">
-
-
-    <div class="section-heading">
-
-      <span>
-        OFFICIAL RESOURCES
-      </span>
-
-      <h2>
-        Useful Student Links
-      </h2>
-
-      <p>
-        Access important official websites from one place.
-      </p>
-
-    </div>
-
-
-
-    <div class="resources-grid">
-
-
-      <a
-        href="https://mahadbt.maharashtra.gov.in/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="resource-card"
-      >
-
-        <div class="resource-icon">
-          🎓
-        </div>
-
-        <div>
-
-          <h3>
-            MahaDBT
-          </h3>
-
-          <p>
-            Maharashtra scholarship portal
-          </p>
-
-          <span>
-            Visit Website →
-          </span>
-
-        </div>
-
-      </a>
-
-
-
-      <a
-        href="https://www.maharashtra.gov.in/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="resource-card"
-      >
-
-        <div class="resource-icon">
-          🏛️
-        </div>
-
-        <div>
-
-          <h3>
-            Maharashtra Government
-          </h3>
-
-          <p>
-            Official Maharashtra government website
-          </p>
-
-          <span>
-            Visit Website →
-          </span>
-
-        </div>
-
-      </a>
-
-
-
-      <a
-        href="https://www.ugc.gov.in/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="resource-card"
-      >
-
-        <div class="resource-icon">
-          📚
-        </div>
-
-        <div>
-
-          <h3>
-            UGC
-          </h3>
-
-          <p>
-            University Grants Commission
-          </p>
-
-          <span>
-            Visit Website →
-          </span>
-
-        </div>
-
-      </a>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     ABOUT
-===================================================== -->
-
-<section
-  class="section about-section"
-  id="about"
->
-
-  <div class="container about-grid">
-
-
-    <div class="about-content">
-
-      <span class="section-label">
-        ABOUT US
-      </span>
-
-      <h2>
-        Making Student Services Simpler.
-      </h2>
-
-      <p>
-        Student Seva Maharashtra is designed as a
-        simple digital platform to help students
-        access useful tools and services from
-        one convenient place.
-      </p>
-
-      <p>
-        From calculating percentages to checking
-        documents, generating applications and
-        getting form-filling assistance, our goal
-        is to reduce unnecessary confusion in
-        everyday student tasks.
-      </p>
-
-
-      <div class="about-points">
-
-        <div>
-          ✓ Simple and student-friendly
-        </div>
-
-        <div>
-          ✓ Mobile responsive
-        </div>
-
-        <div>
-          ✓ Useful digital tools
-        </div>
-
-        <div>
-          ✓ Form filling assistance
         </div>
 
       </div>
 
     </div>
 
+  </section>
 
 
-    <div class="about-card">
+  <!-- STATS -->
+  <section class="stats-section">
 
-      <div class="about-card-icon">
-        🎓
+    <div class="container stats-grid">
+
+      <div class="stat-card">
+        <h3>4+</h3>
+        <p>Student Tools</p>
       </div>
 
-      <h3>
-        Student Seva Maharashtra
-      </h3>
-
-      <p>
-        Digital Student Services
-      </p>
-
-      <div class="about-card-line"></div>
-
-      <span>
-        Learn • Apply • Grow
-      </span>
-
-    </div>
-
-
-  </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     CONTACT
-===================================================== -->
-
-<section
-  class="section contact-section"
-  id="contact"
->
-
-  <div class="container">
-
-
-    <div class="contact-box">
-
-
-      <div class="contact-content">
-
-        <span>
-          NEED HELP?
-        </span>
-
-        <h2>
-          Need Help With a Student Service?
-        </h2>
-
-        <p>
-          Have a question about a student service?
-          Contact us directly on WhatsApp.
-        </p>
-
+      <div class="stat-card">
+        <h3>8+</h3>
+        <p>Scholarship Categories</p>
       </div>
 
-
-      <button
-        class="whatsapp-btn"
-        onclick="openWhatsApp(event)"
-      >
-        💬 Chat on WhatsApp
-      </button>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
-<footer class="site-footer">
-
-  <div class="container footer-grid">
-
-
-    <div class="footer-brand">
-
-      <div class="footer-logo">
-        🎓
+      <div class="stat-card">
+        <h3>₹100</h3>
+        <p>Service Charge</p>
       </div>
 
-      <h3>
-        Student Seva Maharashtra
-      </h3>
-
-      <p>
-        Digital student services made simple.
-      </p>
+      <div class="stat-card">
+        <h3>Easy</h3>
+        <p>Online Assistance</p>
+      </div>
 
     </div>
 
+  </section>
 
 
-    <div class="footer-links">
-
-      <h4>
-        Quick Links
-      </h4>
-
-      <a href="#home">
-        Home
-      </a>
-
-      <a href="#services">
-        Services
-      </a>
-
-      <a href="#scholarship">
-        Scholarship
-      </a>
-
-      <a href="#resources">
-        Resources
-      </a>
-
-      <a href="#contact">
-        Contact
-      </a>
-
-    </div>
-
-
-
-    <div class="footer-links">
-
-      <h4>
-        Student Services
-      </h4>
-
-      <a href="#services">
-        Scholarship Form Filling
-      </a>
-
-      <a href="#services">
-        University Exam Form Filling
-      </a>
-
-      <a href="#services">
-        PAN Card Application Assistance
-      </a>
-
-      <a href="#services">
-        Online Application Form Filling
-      </a>
-
-    </div>
-
-
-  </div>
-
-
-
-  <div class="footer-bottom">
+  <!-- STUDENT HELP CENTER -->
+  <section class="help-center-section">
 
     <div class="container">
 
-      <p>
-        © 2026 Student Seva Maharashtra.
-        All rights reserved.
-      </p>
+      <div class="help-center-box">
 
-      <p>
-        For informational purposes only.
-      </p>
+        <div class="help-center-icon">
+          🎓
+        </div>
+
+        <div class="help-center-text">
+
+          <span>STUDENT SUPPORT</span>
+
+          <h2>Student Help Center</h2>
+
+          <p>
+            Find required documents, service information and
+            WhatsApp assistance in one place.
+          </p>
+
+        </div>
+
+        <a href="help-center.html" class="btn primary-btn">
+          Open Help Center →
+        </a>
+
+      </div>
 
     </div>
 
-  </div>
-
-</footer>
+  </section>
 
 
+  <!-- SERVICES -->
+  <section class="services-section" id="services">
 
-<!-- =====================================================
-     MOBILE WHATSAPP
-===================================================== -->
+    <div class="container">
 
-<a
-  href="#"
-  class="mobile-whatsapp"
-  onclick="openWhatsApp(event)"
->
-  💬 WhatsApp
-</a>
+      <div class="section-heading">
+
+        <span>OUR SERVICES</span>
+
+        <h2>Useful Student Services</h2>
+
+        <p>
+          Explore our simple online tools and student assistance services.
+        </p>
+
+      </div>
 
 
+      <div class="services-grid">
 
-<!-- JavaScript -->
 
-<script src="script.js"></script>
+        <!-- Percentage Calculator -->
+        <div class="service-card">
 
+          <div class="service-icon">📊</div>
+
+          <h3>Percentage Calculator</h3>
+
+          <p>
+            Calculate your percentage quickly and easily.
+          </p>
+
+          <button
+            onclick="showTool('percentage')"
+            class="service-btn">
+
+            Use Tool →
+
+          </button>
+
+        </div>
+
+
+        <!-- Scholarship Finder -->
+        <div class="service-card">
+
+          <div class="service-icon">🎓</div>
+
+          <h3>Scholarship Finder</h3>
+
+          <p>
+            Find scholarship categories and useful scholarship information.
+          </p>
+
+          <button
+            onclick="openScholarshipFinder()"
+            class="service-btn">
+
+            Find Scholarship →
+
+          </button>
+
+        </div>
+
+
+        <!-- Application Generator -->
+        <div class="service-card">
+
+          <div class="service-icon">📝</div>
+
+          <h3>Application Generator</h3>
+
+          <p>
+            Generate useful student applications quickly.
+          </p>
+
+          <button
+            onclick="showTool('application')"
+            class="service-btn">
+
+            Generate →
+
+          </button>
+
+        </div>
+
+
+        <!-- Document Checklist -->
+        <div class="service-card">
+
+          <div class="service-icon">📂</div>
+
+          <h3>Document Checklist</h3>
+
+          <p>
+            Check important documents required for student services.
+          </p>
+
+          <button
+            onclick="showTool('documents')"
+            class="service-btn">
+
+            Check Documents →
+
+          </button>
+
+        </div>
+
+
+        <!-- Scholarship Form Filling -->
+        <div class="service-card">
+
+          <div class="service-icon">🎓</div>
+
+          <h3>Scholarship Form Filling</h3>
+
+          <p>
+            Get assistance with scholarship form filling.
+          </p>
+
+          <div class="service-price">
+            Service Charge: ₹100
+          </div>
+
+          <button
+            onclick="openScholarshipWhatsApp(event)"
+            class="service-btn">
+
+            Apply Now →
+
+          </button>
+
+        </div>
+
+
+        <!-- University Exam Form -->
+        <div class="service-card">
+
+          <div class="service-icon">📝</div>
+
+          <h3>University Exam Form Filling</h3>
+
+          <p>
+            Assistance for filling university examination forms.
+          </p>
+
+          <div class="service-price">
+            Service Charge: ₹100
+          </div>
+
+          <button
+            onclick="openServiceWhatsApp('University Exam Form Filling')"
+            class="service-btn">
+
+            Apply Now →
+
+          </button>
+
+        </div>
+
+
+        <!-- PAN Card -->
+        <div class="service-card">
+
+          <div class="service-icon">🪪</div>
+
+          <h3>PAN Card Application Assistance</h3>
+
+          <p>
+            Assistance with online PAN card application process.
+          </p>
+
+          <div class="service-price">
+            Service Charge: ₹100
+          </div>
+
+          <button
+            onclick="openServiceWhatsApp('PAN Card Application Assistance')"
+            class="service-btn">
+
+            Apply Now →
+
+          </button>
+
+        </div>
+
+
+        <!-- Online Application -->
+        <div class="service-card">
+
+          <div class="service-icon">📄</div>
+
+          <h3>Online Application Form Filling</h3>
+
+          <p>
+            Get assistance with various online application forms.
+          </p>
+
+          <div class="service-price">
+            Service Charge: ₹100
+          </div>
+
+          <button
+            onclick="openServiceWhatsApp('Online Application Form Filling')"
+            class="service-btn">
+
+            Apply Now →
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- TOOL AREA -->
+      <div id="toolArea" class="tool-area"></div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SCHOLARSHIPS -->
+  <section class="scholarship-section" id="scholarships">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span>SCHOLARSHIPS</span>
+
+        <h2>Scholarship Information</h2>
+
+        <p>
+          Explore scholarship opportunities and useful information for students.
+        </p>
+
+      </div>
+
+
+      <div class="scholarship-content">
+
+
+        <div class="scholarship-box">
+
+          <h3>🎓 Maharashtra Student Scholarships</h3>
+
+          <p>
+            Students can explore available scholarship schemes through
+            official government portals.
+          </p>
+
+          <a
+            href="https://mahadbt.maharashtra.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="service-btn">
+
+            Visit MahaDBT →
+
+          </a>
+
+        </div>
+
+
+        <div class="scholarship-box">
+
+          <h3>📚 Scholarship Assistance</h3>
+
+          <p>
+            Need help understanding scholarship forms and application
+            requirements? Contact us for assistance.
+          </p>
+
+          <button
+            onclick="openScholarshipWhatsApp(event)"
+            class="service-btn">
+
+            Get Assistance →
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- NOTICE BOARD -->
+  <section class="notice-section">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span>IMPORTANT</span>
+
+        <h2>Notice Board</h2>
+
+        <p>
+          Important reminders for students.
+        </p>
+
+      </div>
+
+
+      <div class="notice-box">
+
+        <div class="notice-item">
+
+          <strong>📢 Scholarship</strong>
+
+          <p>
+            Students should check official scholarship portals regularly
+            for application dates and updates.
+          </p>
+
+        </div>
+
+
+        <div class="notice-item">
+
+          <strong>📢 Exam Forms</strong>
+
+          <p>
+            Check your university website for examination form deadlines
+            and official notices.
+          </p>
+
+        </div>
+
+
+        <div class="notice-item">
+
+          <strong>📢 Important</strong>
+
+          <p>
+            Always verify important information on the official government
+            or university website.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- RESOURCES -->
+  <section class="resources-section" id="resources">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span>RESOURCES</span>
+
+        <h2>Useful Official Resources</h2>
+
+        <p>
+          Quick access to important official websites.
+        </p>
+
+      </div>
+
+
+      <div class="resources-grid">
+
+
+        <a
+          href="https://mahadbt.maharashtra.gov.in/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="resource-card">
+
+          <span>🎓</span>
+
+          <h3>MahaDBT</h3>
+
+          <p>
+            Maharashtra Direct Benefit Transfer portal.
+          </p>
+
+        </a>
+
+
+        <a
+          href="https://www.maharashtra.gov.in/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="resource-card">
+
+          <span>🏛️</span>
+
+          <h3>Maharashtra Government</h3>
+
+          <p>
+            Official Maharashtra Government website.
+          </p>
+
+        </a>
+
+
+        <a
+          href="https://www.ugc.gov.in/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="resource-card">
+
+          <span>📚</span>
+
+          <h3>UGC</h3>
+
+          <p>
+            University Grants Commission official website.
+          </p>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span>ABOUT US</span>
+
+        <h2>About Student Seva Maharashtra</h2>
+
+      </div>
+
+
+      <div class="about-content">
+
+        <p>
+          Student Seva Maharashtra is a student-focused online platform
+          designed to make common educational services and online application
+          assistance easier and more accessible.
+        </p>
+
+        <p>
+          We provide assistance with selected student services, scholarship
+          forms, university examination forms and online applications.
+        </p>
+
+        <p>
+          Student Seva Maharashtra is an independent assistance platform
+          and is not a government website.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span>CONTACT</span>
+
+        <h2>Need Assistance?</h2>
+
+        <p>
+          Contact us on WhatsApp for service-related assistance.
+        </p>
+
+      </div>
+
+
+      <div class="contact-box">
+
+        <h3>💬 WhatsApp Support</h3>
+
+        <p>
+          Get in touch with us for information about available services.
+        </p>
+
+        <button
+          onclick="openWhatsApp(event)"
+          class="btn primary-btn">
+
+          Contact on WhatsApp
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="container">
+
+      <div class="footer-content">
+
+
+        <div>
+
+          <h3>Student Seva Maharashtra</h3>
+
+          <p>
+            Student services made simple.
+          </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+          <a href="#home">Home</a>
+
+          <a href="#services">Services</a>
+
+          <a href="help-center.html">
+            Help Center
+          </a>
+
+          <a href="#scholarships">
+            Scholarships
+          </a>
+
+          <a href="#contact">
+            Contact
+          </a>
+
+          <a href="privacy-policy.html">
+            Privacy Policy
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <p>
+          © 2026 Student Seva Maharashtra. All rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- MOBILE WHATSAPP -->
+  <a
+    href="javascript:void(0)"
+    onclick="openWhatsApp(event)"
+    class="mobile-whatsapp">
+
+    💬 WhatsApp
+
+  </a>
+
+
+  <!-- MAIN SCRIPT -->
+  <script src="script.js"></script>
 
 </body>
-
 </html>
