@@ -2,22 +2,18 @@
 <html lang="en">
 
 <head>
-
   <meta charset="UTF-8">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta
     name="description"
-    content="Student Seva Maharashtra - Student services, scholarship finder, application generator, percentage calculator and document checklist."
+    content="Student Seva Maharashtra - Student services, scholarship form filling, scholarship finder, application generator, percentage calculator and document checklist."
   >
 
   <meta
     name="keywords"
-    content="Student Seva Maharashtra, scholarship, MahaDBT, student services, application generator, document checklist, percentage calculator"
+    content="Student Seva Maharashtra, scholarship form filling, MahaDBT scholarship, scholarship, student services, application generator, document checklist, percentage calculator"
   >
 
   <meta
@@ -59,25 +55,18 @@
     rel="stylesheet"
     href="style.css"
   >
-
 </head>
 
 
 <body>
 
-
-<!-- =====================================================
-     HEADER
-===================================================== -->
+<!-- HEADER -->
 
 <header class="site-header">
 
   <div class="container header-inner">
 
-    <a
-      href="#home"
-      class="brand"
-    >
+    <a href="#home" class="brand">
 
       <div class="brand-logo">
         🎓
@@ -97,7 +86,6 @@
 
     </a>
 
-
     <button
       class="menu-toggle"
       onclick="toggleMenu()"
@@ -106,32 +94,19 @@
       ☰
     </button>
 
-
     <nav class="nav-links">
 
-      <a href="#home">
-        Home
-      </a>
+      <a href="#home">Home</a>
 
-      <a href="#services">
-        Services
-      </a>
+      <a href="#services">Services</a>
 
-      <a href="#scholarship">
-        Scholarship
-      </a>
+      <a href="#scholarship">Scholarship</a>
 
-      <a href="#resources">
-        Resources
-      </a>
+      <a href="#resources">Resources</a>
 
-      <a href="#notices">
-        Notices
-      </a>
+      <a href="#notices">Notices</a>
 
-      <a href="#contact">
-        Contact
-      </a>
+      <a href="#contact">Contact</a>
 
     </nav>
 
@@ -140,18 +115,11 @@
 </header>
 
 
+<!-- HERO -->
 
-<!-- =====================================================
-     HERO
-===================================================== -->
-
-<section
-  class="hero"
-  id="home"
->
+<section class="hero" id="home">
 
   <div class="container hero-grid">
-
 
     <div class="hero-content">
 
@@ -159,19 +127,17 @@
         🇮🇳 Digital Student Services
       </div>
 
-
       <h1>
         Everything Students Need,
         <span>In One Place.</span>
       </h1>
 
-
       <p>
         Student Seva Maharashtra helps students with
-        scholarships, applications, documents and useful
-        academic services — quickly and easily.
+        scholarships, scholarship form filling,
+        applications, documents and useful academic
+        services — quickly and easily.
       </p>
-
 
       <div class="hero-buttons">
 
@@ -191,25 +157,17 @@
 
       </div>
 
-
       <div class="hero-trust">
 
-        <span>
-          ✓ Easy to Use
-        </span>
+        <span>✓ Easy to Use</span>
 
-        <span>
-          ✓ Student Friendly
-        </span>
+        <span>✓ Student Friendly</span>
 
-        <span>
-          ✓ Mobile Ready
-        </span>
+        <span>✓ Mobile Ready</span>
 
       </div>
 
     </div>
-
 
 
     <div class="hero-card">
@@ -229,11 +187,10 @@
         designed for Maharashtra students.
       </p>
 
-
       <div class="hero-mini-grid">
 
         <div>
-          <strong>4+</strong>
+          <strong>5+</strong>
           <span>Services</span>
         </div>
 
@@ -256,10 +213,7 @@
 </section>
 
 
-
-<!-- =====================================================
-     STATS
-===================================================== -->
+<!-- STATS -->
 
 <section class="stats-section">
 
@@ -325,10 +279,7 @@
 </section>
 
 
-
-<!-- =====================================================
-     SERVICES
-===================================================== -->
+<!-- SERVICES -->
 
 <section
   class="section services-section"
@@ -336,7 +287,6 @@
 >
 
   <div class="container">
-
 
     <div class="section-heading">
 
@@ -349,8 +299,8 @@
       </h2>
 
       <p>
-        Simple tools created to make everyday student
-        tasks easier.
+        Simple tools and services created to make
+        everyday student tasks easier.
       </p>
 
     </div>
@@ -372,11 +322,10 @@
     </div>
 
 
-
     <div class="services-grid">
 
 
-      <!-- Percentage -->
+      <!-- Percentage Calculator -->
 
       <div class="service-card">
 
@@ -407,8 +356,7 @@
       </div>
 
 
-
-      <!-- Scholarship -->
+      <!-- Scholarship Finder -->
 
       <div class="service-card">
 
@@ -439,8 +387,7 @@
       </div>
 
 
-
-      <!-- Application -->
+      <!-- Application Generator -->
 
       <div class="service-card">
 
@@ -471,8 +418,7 @@
       </div>
 
 
-
-      <!-- Documents -->
+      <!-- Document Checklist -->
 
       <div class="service-card">
 
@@ -503,27 +449,55 @@
       </div>
 
 
+      <!-- Scholarship Form Filling -->
+
+      <div class="service-card">
+
+        <div class="service-icon purple">
+          🎓
+        </div>
+
+        <span class="service-tag">
+          FORM FILLING
+        </span>
+
+        <h3>
+          Scholarship Form Filling
+        </h3>
+
+        <p>
+          Maharashtra students साठी Scholarship Form
+          भरून देण्याची सुविधा.
+        </p>
+
+        <div class="service-price">
+          💰 Service Charge: ₹100
+        </div>
+
+        <button
+          class="service-link"
+          onclick="openScholarshipWhatsApp(event)"
+        >
+          Apply Now →
+        </button>
+
+      </div>
+
+
     </div>
 
-
-
-    <!-- Dynamic Tool -->
 
     <div
       id="toolArea"
       class="tool-area"
     ></div>
 
-
   </div>
 
 </section>
 
 
-
-<!-- =====================================================
-     SCHOLARSHIP
-===================================================== -->
+<!-- SCHOLARSHIP -->
 
 <section
   class="section scholarship-section"
@@ -531,7 +505,6 @@
 >
 
   <div class="container">
-
 
     <div class="section-heading">
 
@@ -551,9 +524,7 @@
     </div>
 
 
-
     <div class="scholarship-box">
-
 
       <div class="scholarship-intro">
 
@@ -572,9 +543,7 @@
       </div>
 
 
-
       <div class="scholarship-form">
-
 
         <div class="form-group">
 
@@ -625,7 +594,6 @@
         </div>
 
 
-
         <div class="form-group">
 
           <label>
@@ -663,7 +631,6 @@
         </div>
 
 
-
         <div class="form-group">
 
           <label>
@@ -678,7 +645,6 @@
           >
 
         </div>
-
 
 
         <div class="form-group">
@@ -706,7 +672,6 @@
         </div>
 
 
-
         <div class="form-group">
 
           <label>
@@ -730,7 +695,6 @@
           </select>
 
         </div>
-
 
 
         <div class="form-group">
@@ -757,9 +721,7 @@
 
         </div>
 
-
       </div>
-
 
 
       <button
@@ -775,7 +737,6 @@
         class="scholarship-results"
       ></div>
 
-
     </div>
 
   </div>
@@ -783,10 +744,7 @@
 </section>
 
 
-
-<!-- =====================================================
-     NOTICE BOARD
-===================================================== -->
+<!-- NOTICE BOARD -->
 
 <section
   class="section notices-section"
@@ -794,7 +752,6 @@
 >
 
   <div class="container">
-
 
     <div class="section-heading">
 
@@ -813,9 +770,7 @@
     </div>
 
 
-
     <div class="notice-grid">
-
 
       <div class="notice-card">
 
@@ -841,7 +796,6 @@
         </div>
 
       </div>
-
 
 
       <div class="notice-card">
@@ -870,7 +824,6 @@
       </div>
 
 
-
       <div class="notice-card">
 
         <div class="notice-icon">
@@ -896,7 +849,6 @@
 
       </div>
 
-
     </div>
 
   </div>
@@ -904,10 +856,7 @@
 </section>
 
 
-
-<!-- =====================================================
-     RESOURCES
-===================================================== -->
+<!-- RESOURCES -->
 
 <section
   class="section resources-section"
@@ -915,7 +864,6 @@
 >
 
   <div class="container">
-
 
     <div class="section-heading">
 
@@ -932,7 +880,6 @@
       </p>
 
     </div>
-
 
 
     <div class="resources-grid">
@@ -968,7 +915,6 @@
       </a>
 
 
-
       <a
         href="https://www.maharashtra.gov.in/"
         target="_blank"
@@ -997,7 +943,6 @@
         </div>
 
       </a>
-
 
 
       <a
@@ -1029,7 +974,6 @@
 
       </a>
 
-
     </div>
 
   </div>
@@ -1037,10 +981,7 @@
 </section>
 
 
-
-<!-- =====================================================
-     ABOUT
-===================================================== -->
+<!-- ABOUT -->
 
 <section
   class="section about-section"
@@ -1048,7 +989,6 @@
 >
 
   <div class="container about-grid">
-
 
     <div class="about-content">
 
@@ -1069,7 +1009,8 @@
 
       <p>
         From calculating percentages to checking
-        documents and generating applications,
+        documents, generating applications and
+        getting scholarship form filling support,
         our goal is to reduce unnecessary confusion
         in everyday student tasks.
       </p>
@@ -1090,13 +1031,12 @@
         </div>
 
         <div>
-          ✓ Official resources included
+          ✓ Scholarship form filling support
         </div>
 
       </div>
 
     </div>
-
 
 
     <div class="about-card">
@@ -1121,16 +1061,12 @@
 
     </div>
 
-
   </div>
 
 </section>
 
 
-
-<!-- =====================================================
-     CONTACT
-===================================================== -->
+<!-- CONTACT -->
 
 <section
   class="section contact-section"
@@ -1139,9 +1075,7 @@
 
   <div class="container">
 
-
     <div class="contact-box">
-
 
       <div class="contact-content">
 
@@ -1168,7 +1102,6 @@
         💬 Chat on WhatsApp
       </button>
 
-
     </div>
 
   </div>
@@ -1176,15 +1109,11 @@
 </section>
 
 
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
+<!-- FOOTER -->
 
 <footer class="site-footer">
 
   <div class="container footer-grid">
-
 
     <div class="footer-brand">
 
@@ -1201,7 +1130,6 @@
       </p>
 
     </div>
-
 
 
     <div class="footer-links">
@@ -1233,7 +1161,6 @@
     </div>
 
 
-
     <div class="footer-links">
 
       <h4>
@@ -1261,11 +1188,13 @@
         Document Checklist
       </a>
 
+      <a href="#services">
+        Scholarship Form Filling
+      </a>
+
     </div>
 
-
   </div>
-
 
 
   <div class="footer-bottom">
@@ -1288,10 +1217,7 @@
 </footer>
 
 
-
-<!-- =====================================================
-     MOBILE WHATSAPP
-===================================================== -->
+<!-- MOBILE WHATSAPP -->
 
 <a
   href="#"
@@ -1302,8 +1228,8 @@
 </a>
 
 
-
 <!-- JavaScript -->
+
 <script src="script.js"></script>
 
 </body>
