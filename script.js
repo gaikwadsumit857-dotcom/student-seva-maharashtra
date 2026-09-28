@@ -1982,7 +1982,24 @@ document.addEventListener(
 
   }
 );
+function openScholarshipWhatsApp(event) {
+  if (event) {
+    event.preventDefault();
+  }
 
+  const phone = "918799989899";
+
+  const message =
+    "Hello, मला Scholarship Form भरायचा आहे. कृपया ₹100 service charge आणि form filling बद्दल माहिती द्या.";
+
+  const url =
+    "https://wa.me/" +
+    phone +
+    "?text=" +
+    encodeURIComponent(message);
+
+  window.open(url, "_blank");
+}
 
 /* =========================================================
    END OF SCRIPT
