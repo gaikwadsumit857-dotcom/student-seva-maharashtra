@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Student Help Center | Student Seva Maharashtra</title>
+
+  <meta name="description" content="Student Help Center for scholarship forms, university exam forms, PAN card assistance and online application services.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1e3a8a;
+      color: white;
+      padding: 28px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    header p {
+      margin: 8px 0 0;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .intro {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      text-align: center;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+      margin-bottom: 25px;
+    }
+
+    .intro h2 {
+      margin-top: 0;
+      color: #1e3a8a;
+    }
+
+    .service-card {
+      background: white;
+      margin-bottom: 20px;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+    }
+
+    .service-card h2 {
+      margin-top: 0;
+      color: #1e3a8a;
+    }
+
+    .service-icon {
+      font-size: 34px;
+    }
+
+    .documents {
+      background: #f1f5f9;
+      padding: 15px 20px;
+      border-radius: 10px;
+      margin: 15px 0;
+    }
+
+    .documents h3 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .documents ul {
+      margin-bottom: 0;
+      padding-left: 20px;
+    }
+
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    .whatsapp-btn {
+      display: inline-block;
+      background: #16a34a;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin: 10px 0 30px;
+      padding: 12px 20px;
+      background: #1e3a8a;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      background: #172554;
+      color: white;
+      padding: 25px 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 24px;
+      }
+
+      .service-card {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🎓 Student Help Center</h1>
+    <p>Student Seva Maharashtra</p>
+  </header>
+
+
+  <div class="container">
+
+    <div class="intro">
+
+      <h2>How Can We Help You?</h2>
+
+      <p>
+        Select the service you need and check the basic documents
+        required before contacting us.
+      </p>
+
+    </div>
+
+
+    <!-- Scholarship -->
+    <div class="service-card">
+
+      <div class="service-icon">🎓</div>
+
+      <h2>Scholarship Form Filling</h2>
+
+      <p>
+        Assistance with scholarship application and online form filling.
+      </p>
+
+      <div class="documents">
+
+        <h3>📂 Basic Documents</h3>
+
+        <ul>
+          <li>Aadhaar Card</li>
+          <li>Bank Passbook</li>
+          <li>Previous Year Marksheet</li>
+          <li>Caste Certificate, if applicable</li>
+          <li>Income Certificate, if applicable</li>
+        </ul>
+
+      </div>
+
+      <div class="price">
+        Service Charge: ₹100
+      </div>
+
+      <button
+        class="whatsapp-btn"
+        onclick="contactWhatsApp('Scholarship Form Filling')">
+
+        💬 Get Scholarship Assistance
+
+      </button>
+
+    </div>
+
+
+    <!-- University Exam -->
+    <div class="service-card">
+
+      <div class="service-icon">📝</div>
+
+      <h2>University Exam Form Filling</h2>
+
+      <p>
+        Assistance with online university examination form filling.
+      </p>
+
+      <div class="documents">
+
+        <h3>📂 Basic Documents</h3>
+
+        <ul>
+          <li>College / Student ID</li>
+          <li>Previous Marksheet</li>
+          <li>Enrollment / PRN details, if applicable</li>
+          <li>Recent Photograph, if required</li>
+        </ul>
+
+      </div>
+
+      <div class="price">
+        Service Charge: ₹100
+      </div>
+
+      <button
+        class="whatsapp-btn"
+        onclick="contactWhatsApp('University Exam Form Filling')">
+
+        💬 Get Exam Form Assistance
+
+      </button>
+
+    </div>
+
+
+    <!-- PAN -->
+    <div class="service-card">
+
+      <div class="service-icon">🪪</div>
+
+      <h2>PAN Card Application Assistance</h2>
+
+      <p>
+        Assistance with the online PAN card application process.
+      </p>
+
+      <div class="documents">
+
+        <h3>📂 Basic Documents</h3>
+
+        <ul>
+          <li>Aadhaar Card</li>
+          <li>Mobile Number</li>
+          <li>Required personal details</li>
+          <li>Other documents, if required by the application</li>
+        </ul>
+
+      </div>
+
+      <div class="price">
+        Service Charge: ₹100
+      </div>
+
+      <button
+        class="whatsapp-btn"
+        onclick="contactWhatsApp('PAN Card Application Assistance')">
+
+        💬 Get PAN Assistance
+
+      </button>
+
+    </div>
+
+
+    <!-- Online Application -->
+    <div class="service-card">
+
+      <div class="service-icon">📄</div>
+
+      <h2>Online Application Form Filling</h2>
+
+      <p>
+        Assistance with various online application forms.
+      </p>
+
+      <div class="documents">
+
+        <h3>📂 Documents</h3>
+
+        <ul>
+          <li>Documents depend on the application</li>
+          <li>Aadhaar Card, if required</li>
+          <li>Educational documents, if required</li>
+          <li>Photograph and signature, if required</li>
+        </ul>
+
+      </div>
+
+      <div class="price">
+        Service Charge: ₹100
+      </div>
+
+      <button
+        class="whatsapp-btn"
+        onclick="contactWhatsApp('Online Application Form Filling')">
+
+        💬 Get Application Assistance
+
+      </button>
+
+    </div>
+
+
+    <!-- General Help -->
+    <div class="service-card">
+
+      <div class="service-icon">💬</div>
+
+      <h2>Other Student Help</h2>
+
+      <p>
+        Have a question about a student service that is not listed above?
+        Contact us on WhatsApp and tell us what help you need.
+      </p>
+
+      <div class="price">
+        Service charge may vary depending on the service.
+      </div>
+
+      <button
+        class="whatsapp-btn"
+        onclick="contactWhatsApp('Other Student Help')">
+
+        💬 Contact Student Seva
+
+      </button>
+
+    </div>
+
+
+    <a href="index.html" class="back-btn">
+      ← Back to Student Seva Maharashtra
+    </a>
+
+  </div>
+
+
+  <footer>
+
+    <p>
+      © 2026 Student Seva Maharashtra. All rights reserved.
+    </p>
+
+    <p>
+      This is an independent student assistance platform and
+      is not a government website.
+    </p>
+
+  </footer>
+
+
+  <script>
+
+    function contactWhatsApp(serviceName) {
+
+      const phone = "918799989899";
+
+      const message =
+        "Hello, मला " +
+        serviceName +
+        " ची सेवा हवी आहे. कृपया ₹100 service charge आणि process बद्दल माहिती द्या.";
+
+      const url =
+        "https://wa.me/" +
+        phone +
+        "?text=" +
+        encodeURIComponent(message);
+
+      window.open(url, "_blank");
+
+    }
+
+  </script>
+
+</body>
+</html>
