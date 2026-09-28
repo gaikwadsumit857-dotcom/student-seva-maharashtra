@@ -2000,6 +2000,22 @@ function openScholarshipWhatsApp(event) {
 
   window.open(url, "_blank");
 }
+function openServiceWhatsApp(serviceName) {
+  const phone = "918799989899";
+
+  const message =
+    "Hello, मला " +
+    serviceName +
+    " ची सेवा हवी आहे. कृपया ₹100 service charge आणि process बद्दल माहिती द्या.";
+
+  const url =
+    "https://wa.me/" +
+    phone +
+    "?text=" +
+    encodeURIComponent(message);
+
+  window.open(url, "_blank");
+}
 
 /* =========================================================
    END OF SCRIPT
