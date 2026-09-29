@@ -3186,3 +3186,79 @@ img {
   }
 
 }
+
+/* =========================================================
+   LETTER BY LETTER FLOATING ANIMATION
+========================================================= */
+
+.hero h1.letter-animation span {
+  display: inline-block !important;
+  animation: letterFloat 2s ease-in-out infinite;
+}
+
+/* प्रत्येक अक्षराची वेगळी timing */
+
+.hero h1.letter-animation span:nth-child(1)  { animation-delay: 0s; }
+.hero h1.letter-animation span:nth-child(2)  { animation-delay: 0.05s; }
+.hero h1.letter-animation span:nth-child(3)  { animation-delay: 0.10s; }
+.hero h1.letter-animation span:nth-child(4)  { animation-delay: 0.15s; }
+.hero h1.letter-animation span:nth-child(5)  { animation-delay: 0.20s; }
+.hero h1.letter-animation span:nth-child(6)  { animation-delay: 0.25s; }
+.hero h1.letter-animation span:nth-child(7)  { animation-delay: 0.30s; }
+.hero h1.letter-animation span:nth-child(8)  { animation-delay: 0.35s; }
+.hero h1.letter-animation span:nth-child(9)  { animation-delay: 0.40s; }
+.hero h1.letter-animation span:nth-child(10) { animation-delay: 0.45s; }
+
+.hero h1.letter-animation span:nth-child(12) { animation-delay: 0.50s; }
+.hero h1.letter-animation span:nth-child(13) { animation-delay: 0.55s; }
+.hero h1.letter-animation span:nth-child(14) { animation-delay: 0.60s; }
+.hero h1.letter-animation span:nth-child(15) { animation-delay: 0.65s; }
+.hero h1.letter-animation span:nth-child(16) { animation-delay: 0.70s; }
+.hero h1.letter-animation span:nth-child(17) { animation-delay: 0.75s; }
+.hero h1.letter-animation span:nth-child(18) { animation-delay: 0.80s; }
+
+.hero h1.letter-animation span:nth-child(20) { animation-delay: 0.85s; }
+.hero h1.letter-animation span:nth-child(21) { animation-delay: 0.90s; }
+.hero h1.letter-animation span:nth-child(22) { animation-delay: 0.95s; }
+.hero h1.letter-animation span:nth-child(23) { animation-delay: 1s; }
+.hero h1.letter-animation span:nth-child(24) { animation-delay: 1.05s; }
+
+.hero h1.letter-animation span:nth-child(26) { animation-delay: 1.10s; }
+.hero h1.letter-animation span:nth-child(27) { animation-delay: 1.15s; }
+
+.hero h1.letter-animation span:nth-child(29) { animation-delay: 1.20s; }
+.hero h1.letter-animation span:nth-child(30) { animation-delay: 1.25s; }
+.hero h1.letter-animation span:nth-child(31) { animation-delay: 1.30s; }
+
+.hero h1.letter-animation span:nth-child(33) { animation-delay: 1.35s; }
+.hero h1.letter-animation span:nth-child(34) { animation-delay: 1.40s; }
+.hero h1.letter-animation span:nth-child(35) { animation-delay: 1.45s; }
+.hero h1.letter-animation span:nth-child(36) { animation-delay: 1.50s; }
+.hero h1.letter-animation span:nth-child(37) { animation-delay: 1.55s; }
+.hero h1.letter-animation span:nth-child(38) { animation-delay: 1.60s; }
+
+
+@keyframes letterFloat {
+
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-8px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
+}
+
