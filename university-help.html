@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="University Student Hub - Find official university websites, exam portals, results and student information for Maharashtra students."
+  >
+
+  <meta
+    name="keywords"
+    content="Maharashtra universities, university exam portal, university results, student portal, university website"
+  >
+
+  <meta name="author" content="Student Seva Maharashtra">
+
+  <title>University Student Hub | Student Seva Maharashtra</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e2e8f0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .header-inner {
+      max-width: 1150px;
+      margin: auto;
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      text-decoration: none;
+      color: #0f172a;
+      font-size: 21px;
+      font-weight: 700;
+    }
+
+    .logo span {
+      color: #2563eb;
+    }
+
+    .back-btn {
+      text-decoration: none;
+      color: #2563eb;
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #eff6ff, #ffffff);
+      padding: 70px 20px 60px;
+      text-align: center;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: #dbeafe;
+      color: #1d4ed8;
+      padding: 8px 15px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 5vw, 58px);
+      line-height: 1.1;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 span {
+      color: #2563eb;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: #475569;
+      font-size: 17px;
+    }
+
+    .container {
+      max-width: 1050px;
+      margin: auto;
+      padding: 50px 20px 80px;
+    }
+
+    .selection-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 22px;
+      padding: 32px;
+      box-shadow: 0 15px 40px rgba(15, 23, 42, 0.06);
+      margin-bottom: 35px;
+    }
+
+    .selection-card h2 {
+      font-size: 25px;
+      margin-bottom: 8px;
+    }
+
+    .selection-card p {
+      color: #64748b;
+      margin-bottom: 20px;
+    }
+
+    select {
+      width: 100%;
+      padding: 15px 16px;
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      background: #ffffff;
+      font-size: 16px;
+      color: #0f172a;
+      outline: none;
+    }
+
+    select:focus {
+      border-color: #2563eb;
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    }
+
+    .university-card {
+      display: none;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 22px;
+      padding: 30px;
+      box-shadow: 0 15px 40px rgba(15, 23, 42, 0.06);
+    }
+
+    .university-card.active {
+      display: block;
+    }
+
+    .university-header {
+      margin-bottom: 25px;
+    }
+
+    .university-header h2 {
+      font-size: 27px;
+      margin-bottom: 5px;
+    }
+
+    .university-header p {
+      color: #64748b;
+    }
+
+    .link-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .link-card {
+      text-decoration: none;
+      color: #0f172a;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 20px;
+      background: #f8fafc;
+      transition: 0.2s ease;
+    }
+
+    .link-card:hover {
+      transform: translateY(-3px);
+      border-color: #93c5fd;
+      box-shadow: 0 10px 25px rgba(37, 99, 235, 0.08);
+    }
+
+    .link-icon {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .link-card h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .link-card p {
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    .info-box {
+      margin-top: 30px;
+      padding: 18px;
+      border-radius: 14px;
+      background: #eff6ff;
+      color: #1e3a8a;
+      font-size: 14px;
+    }
+
+    .coming {
+      margin-top: 35px;
+      text-align: center;
+      padding: 30px 20px;
+      border: 1px dashed #cbd5e1;
+      border-radius: 18px;
+      background: #ffffff;
+    }
+
+    .coming h3 {
+      margin-bottom: 7px;
+    }
+
+    .coming p {
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    footer {
+      background: #0f172a;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 25px 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      .hero {
+        padding: 55px 18px 45px;
+      }
+
+      .selection-card,
+      .university-card {
+        padding: 22px;
+      }
+
+      .link-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .header-inner {
+        padding: 15px;
+      }
+
+      .logo {
+        font-size: 18px;
+      }
+
+      .back-btn {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        🎓 Student Seva <span>Maharashtra</span>
+      </a>
+
+      <a href="index.html" class="back-btn">
+        ← Back to Home
+      </a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-badge">🎓 University Student Hub</div>
+
+    <h1>
+      Your University,
+      <span>All in One Place.</span>
+    </h1>
+
+    <p>
+      Find official university websites, exam portals, results,
+      notifications and student information quickly.
+    </p>
+  </section>
+
+  <main class="container">
+
+    <div class="selection-card">
+
+      <h2>🔎 Select Your University</h2>
+
+      <p>
+        Choose your university to access important official links.
+      </p>
+
+      <select id="universitySelect" onchange="showUniversity()">
+
+        <option value="">
+          -- Select University --
+        </option>
+
+        <option value="solapur">
+          Punyashlok Ahilyadevi Holkar Solapur University
+        </option>
+
+        <option value="pune">
+          Savitribai Phule Pune University
+        </option>
+
+        <option value="shivaji">
+          Shivaji University, Kolhapur
+        </option>
+
+        <option value="srtmu">
+          Swami Ramanand Teerth Marathwada University
+        </option>
+
+        <option value="mu">
+          University of Mumbai
+        </option>
+
+        <option value="dbatu">
+          Dr. Babasaheb Ambedkar Technological University
+        </option>
+
+        <option value="other">
+          Other University
+        </option>
+
+      </select>
+
+    </div>
+
+
+    <!-- SOLAPUR UNIVERSITY -->
+
+    <div id="solapur" class="university-card">
+
+      <div class="university-header">
+
+        <h2>
+          Punyashlok Ahilyadevi Holkar Solapur University
+        </h2>
+
+        <p>
+          Important official student links
+        </p>
+
+      </div>
+
+      <div class="link-grid">
+
+        <a
+          href="https://su.digitaluniversity.ac/"
+          target="_blank"
+          class="link-card"
+        >
+          <div class="link-icon">🌐</div>
+          <h3>Official Website</h3>
+          <p>Visit the official university portal.</p>
+        </a>
+
+        <a
+          href="https://su.digitaluniversity.ac/"
+          target="_blank"
+          class="link-card"
+        >
+          <div class="link-icon">📝</div>
+          <h3>Exam Portal</h3>
+          <p>Access examination related services.</p>
+        </a>
+
+        <a
+          href="https://su.digitaluniversity.ac/"
+          target="_blank"
+          class="link-card"
+        >
+          <div class="link-icon">📊</div>
+          <h3>Results</h3>
+          <p>Check university examination results.</p>
+        </a>
+
+        <a
+          href="https://su.digitaluniversity.ac/"
+          target="_blank"
+          class="link-card"
+        >
+          <div class="link-icon">🔔</div>
+          <h3>Notifications</h3>
+          <p>Check official university updates.</p>
+        </a>
+
+      </div>
+
+      <div class="info-box">
+        💡 Always verify important dates, notices and examination
+        information on the official university website.
+      </div>
+
+    </div>
+
+
+    <!-- PUNE UNIVERSITY -->
+
+    <div id="pune" class="university-card">
+
+      <div class="university-header">
+        <h2>Savitribai Phule Pune University</h2>
+        <p>Important official student links</p>
+      </div>
+
+      <div class="link-grid">
+
+        <a
+          href="https://www.unipune.ac.in/"
+          target="_blank"
+          class="link-card"
+        >
+          <div class="link-icon">🌐</div>
+          <h3>Official Website</h3>
+          <p>Visit the official university website.</p>
+        </a>
+
+        <a
+          href="https://exam.unipune.ac.in/"
+          target="_blank"
+          class="link-card"
+        >
+          <div class="link-icon">📝</div>
+          <h3>Exam Portal</h3>
+          <p>Access examination related information.</p>
+        </a>
+
+        <a
+          href="https://www.unipune.ac.in/university_files/results.htm"
+          target="_blank"
+          class="link-card"
+        >
+          <div class="link-icon">📊</div>
+          <h3>Results</h3>
+          <p>Check university examination results.</p>
+        </a>
+
+        <a
+          href="https://www.unipune.ac.in/"
+          target="_blank"
+          class="link-card"
+        >
+          <div class="link-icon">🔔</div>
+          <h3>Notifications</h3>
+          <p>Check official university updates.</p>
+        </a>
+
+      </div>
+
+      <div class="info-box">
+        💡 Use official university sources for important academic
+        information and deadlines.
+      </div>
+
+    </div>
+
+
+    <!-- SHIVAJI UNIVERSITY -->
+
+    <div id="shivaji" class="university-card">
+
+      <div class="university-header">
+        <h2>Shivaji University, Kolhapur</h2>
+        <p>Important official student links</p>
+      </div>
+
+      <div class="link-grid">
+
+        <a
+          href="https://www.unishivaji.ac.in/"
+          target="_blank"
+          class="link-card"
+        >
+          <div class="link-icon">🌐</div>
+          <h3>Official Website</h3>
+          <p>Visit the official university website.</p>
+        </a>
+
+        <a
+          href="https://www.unishivaji.ac.in/"
+          target="_blank"
+          class="link-card"
+        >
+          <div class="link-icon">📝</div>
+          <h3>Exam Portal</h3>
+          <p>Find examination information.</p>
+        </a>
+
+        <a
+          href="https://www.unishivaji.ac.in/"
+          target="_blank"
+          class="link-card"
+        >
+          <div class="link-icon">📊</div>
+          <h3>Results</h3>
+          <p>Find university results.</p>
+        </a>
+
+        <a
+          href="https://www.unishivaji.ac.in/"
+          target="_blank"
+          class="link-card"
+        >
+          <div class="link-icon">🔔</div>
+          <h3>Notifications</h3>
+          <p>Check official notifications.</p>
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- SRTMU -->
+
+    <div id="srtmu" class="university-card">
+
+      <div class="university-header">
+        <h2>Swami Ramanand Teerth Marathwada University</h2>
+        <p>Important official student links</p>
+      </div>
+
+      <div class="link-grid">
+
+        <a
+          href="https://srtmun.ac.in/"
+          target="_blank"
+          class="link-card"
+        >
+          <div class="link-icon">🌐</div>
+          <h3>Official Website</h3>
+          <p>Visit the official university website.</p>
+        </a>
+
+        <a
+          href="https://srtmun.ac.in/"
+          target="_blank"
+          class="link-card"
+        >
+          <div class="link-icon">📝</div>
+          <h3>Exam Portal</h3>
+          <p>Find examination information.</p>
+        </a>
+
+        <a
+          href="https://srtmun.ac.in/"
+          target="_blank"
+          class="link-card"
+        >
+          <div class="link-icon">📊</div>
+          <h3>Results</h3>
+          <p>Find university results.</p>
+        </a>
+
+        <a
+          href="https://srtmun.ac.in/"
+          target="_blank"
+          class="link-card"
+        >
+          <div class="link-icon">🔔</div>
+          <h3>Notifications</h3>
+          <p>Check official notifications.</p>
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- MUMBAI UNIVERSITY -->
+
+    <div id="mu" class="university-card">
+
+      <div class="university-header">
+        <h2>University of Mumbai</h2>
+        <p>Important official student links</p>
+      </div>
+
+      <div class="link-grid">
+
+        <a
+          href="https://mu.ac.in/"
+          target="_blank"
+          class="link-card"
+        >
+          <div class="link-icon">🌐</div>
+          <h3>Official Website</h3>
+          <p>Visit the official university website.</p>
+        </a>
+
+        <a
+          href="https://mu.ac.in/"
+          target="_blank"
+          class="link-card"
+        >
+          <div class="link-icon">📝</div>
+          <h3>Exam Portal</h3>
+          <p>Find examination services.</p>
+        </a>
+
+        <a
+          href="https://mu.ac.in/"
+          target="_blank"
+          class="link-card"
+        >
+          <div class="link-icon">📊</div>
+          <h3>Results</h3>
+          <p>Find university results.</p>
+        </a>
+
+        <a
+          href="https://mu.ac.in/"
+          target="_blank"
+          class="link-card"
+        >
+          <div class="link-icon">🔔</div>
+          <h3>Notifications</h3>
+          <p>Check official updates.</p>
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- DBATU -->
+
+    <div id="dbatu" class="university-card">
+
+      <div class="university-header">
+        <h2>Dr. Babasaheb Ambedkar Technological University</h2>
+        <p>Important official student links</p>
+      </div>
+
+      <div class="link-grid">
+
+        <a
+          href="https://dbatu.ac.in/"
+          target="_blank"
+          class="link-card"
+        >
+          <div class="link-icon">🌐</div>
+          <h3>Official Website</h3>
+          <p>Visit the official university website.</p>
+        </a>
+
+        <a
+          href="https://dbatu.ac.in/"
+          target="_blank"
+          class="link-card"
+        >
+          <div class="link-icon">📝</div>
+          <h3>Exam Portal</h3>
+          <p>Find examination information.</p>
+        </a>
+
+        <a
+          href="https://dbatu.ac.in/"
+          target="_blank"
+          class="link-card"
+        >
+          <div class="link-icon">📊</div>
+          <h3>Results</h3>
+          <p>Find university results.</p>
+        </a>
+
+        <a
+          href="https://dbatu.ac.in/"
+          target="_blank"
+          class="link-card"
+        >
+          <div class="link-icon">🔔</div>
+          <h3>Notifications</h3>
+          <p>Check official updates.</p>
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- OTHER -->
+
+    <div id="other" class="university-card">
+
+      <div class="university-header">
+        <h2>Other University</h2>
+        <p>
+          We are gradually adding more Maharashtra universities.
+        </p>
+      </div>
+
+      <div class="coming">
+
+        <h3>🚀 More Universities Coming</h3>
+
+        <p>
+          More official university links will be added soon.
+          Always verify information from the official university website.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="coming">
+
+      <h3>📚 More Student Resources Coming Soon</h3>
+
+      <p>
+        University-wise exam information, important notices,
+        results and other useful student resources will be added gradually.
+      </p>
+
+    </div>
+
+  </main>
+
+
+  <footer>
+
+    © 2026 Student Seva Maharashtra
+
+    <br>
+
+    For informational purposes only. Always verify important
+    information from official sources.
+
+  </footer>
+
+
+  <script>
+
+    function showUniversity() {
+
+      const selected =
+        document.getElementById("universitySelect").value;
+
+      const cards =
+        document.querySelectorAll(".university-card");
+
+      cards.forEach(function(card) {
+        card.classList.remove("active");
+      });
+
+      if (selected) {
+
+        const selectedCard =
+          document.getElementById(selected);
+
+        if (selectedCard) {
+          selectedCard.classList.add("active");
+        }
+
+      }
+
+    }
+
+  </script>
+
+</body>
+</html>
