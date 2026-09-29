@@ -3107,3 +3107,82 @@ img {
   display: block;
   border-radius: inherit;
 }
+/* =========================================
+   ANIMATED HERO TITLE
+========================================= */
+
+.animated-title .word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.animated-title .word > span {
+  display: inline-block;
+  animation: letterFloat 2.5s ease-in-out infinite;
+}
+
+/* Different timing for each letter */
+
+.animated-title .word > span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.animated-title .word > span:nth-child(2) {
+  animation-delay: 0.08s;
+}
+
+.animated-title .word > span:nth-child(3) {
+  animation-delay: 0.16s;
+}
+
+.animated-title .word > span:nth-child(4) {
+  animation-delay: 0.24s;
+}
+
+.animated-title .word > span:nth-child(5) {
+  animation-delay: 0.32s;
+}
+
+.animated-title .word > span:nth-child(6) {
+  animation-delay: 0.40s;
+}
+
+.animated-title .word > span:nth-child(7) {
+  animation-delay: 0.48s;
+}
+
+.animated-title .word > span:nth-child(8) {
+  animation-delay: 0.56s;
+}
+
+.animated-title .word > span:nth-child(9) {
+  animation-delay: 0.64s;
+}
+
+.animated-title .word > span:nth-child(10) {
+  animation-delay: 0.72s;
+}
+
+@keyframes letterFloat {
+
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-7px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
+}
